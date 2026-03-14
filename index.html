@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guess the Ben 10 Alien</title>
+
+<style>
+
+body{
+    background:cyan;
+    font-family:Arial;
+    text-align:center;
+}
+
+h1{
+    color:gold;
+}
+
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    width:150px;
+    height:200px;
+    perspective:1000px;
+}
+
+.inner{
+    position:relative;
+    width:100%;
+    height:100%;
+    transition:transform 0.6s;
+    transform-style:preserve-3d;
+}
+
+.card.flip .inner{
+    transform:rotateY(180deg);
+}
+
+.front, .back{
+    position:absolute;
+    width:100%;
+    height:100%;
+    backface-visibility:hidden;
+    border-radius:10px;
+}
+
+.front img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+
+.back{
+    background:gold;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    transform:rotateY(180deg);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Guess the Ben 10 Alien</h1>
+
+<div class="grid">
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Upgrade.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ghostfreak.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="XLR8.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Cannonbolt.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Upchuck.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="buzz.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Grey Matter.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Heatblast.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Four Arms.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Diamondhead.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Wildvine.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Eye guy.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Way big.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Frankentrueno.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Stinkfly.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Wildmutt.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ripjaws.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ditto.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Arctiguana.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Blitzwolfer.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Snare-Oh.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Swampfire.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Nanomech.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Chromastone.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Big Chill.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Lodestar.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Rath.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Echo Echo.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Spidermonkey.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Brainstorm.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="alien X.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Jetray.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Humungousaur.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Goop.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Water Hazard.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Armodrillo.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate Wildmutt.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate  Humangasaur.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate Echo Echo.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Eatle.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Juryrigg.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Terraspin.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate Cannonbolt.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate Swampfire.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate Way Big.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Chamalien.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="NRG.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate big chill.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Fastrack.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ultimate Spidermonkey.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="CLOCKWORK.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Shocksquatch.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Crashhopper.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="gutrot.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Bloxx.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Feedback.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Walkatrout.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Whampire.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Gravattack.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Pesky Dust.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Ball weevil.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Mole-Stache.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Worst.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Toepick.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Kickin Hawk.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Astrodactyl.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Atomic.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+
+<div class="card" onclick="flip(this)">
+<div class="inner">
+<div class="front">
+<img src="Bullfrag.jfif">
+</div>
+<div class="back">?</div>
+</div>
+</div>
+
+<script>
+
+function flip(card){
+    card.classList.toggle("flip");
+}
+
+</script>
+
+</body>
+</html>
